@@ -1,0 +1,61 @@
+
+@font-face {
+    font-family: 'everettjana';
+    src: url('everett-jana-webfont.woff2') format('woff2'),
+         url('everett-jana-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'everettlight';
+    src: url('everett-light-webfont.woff2') format('woff2'),
+         url('everett-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'everettmedium';
+    src: url('everett-medium-webfont.woff2') format('woff2'),
+         url('everett-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'everettregular';
+    src: url('everett-regular-webfont.woff2') format('woff2'),
+         url('everett-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.everett-jana {
+    font-family: 'everettmedium';
+}
+
+.everett-light {
+    font-family: 'everettlight';
+}
+
+.everett-medium {
+    font-family: 'everettmedium';
+}
+
+.everett {
+    font-family: 'everettregular';
+}

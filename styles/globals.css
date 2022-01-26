@@ -1,9 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+.bg-main {
+  object-fit: cover !important;
+}
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+.embla {
+  overflow: hidden;
+  height: 90vh;
+}
+.embla > div {
+  overflow: visible !important;
+}
+.embla__container {
+  display: flex;
+  width: 100%;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+}
+.mt-8 {
+  margin-top: 2rem/* 32px */;
+}
+.mx-56 {
+  margin-left: 14rem/* 224px */;
+  margin-right: 14rem/* 224px */;
+}
+.border-t-1 {
+  border-top-width: 1.5px;
+}
+.underline {
+  text-decoration-line: underline;
+}
+.italic {
+  font-style: italic;
+}
+.text-3\/2xl {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+.left-btn {
+  position:absolute !important;
+  top: -50vh !important;
+  left: 2vw !important;
+  z-index: 30 !important;
+  margin: 0 !important;
+  overflow :auto !important;
+}
+.right-btn {
+  position:absolute !important;
+  top: -50vh !important;
+  left: 92vw !important;
+  z-index: 30 !important;
+  margin: 0 !important;
+  overflow :auto !important;
+}
+
+
+.text-25xl {
+  font-size: 1.63rem/* 30px */;
+    line-height: 1.9rem/* 36px */;
 }
 
 a {
@@ -13,4 +80,59 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.white {
+  background-color: rgba(255, 255, 255, 0.83);
+}
+.border-1 {
+  border-width: 1px;
+}
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.transtoblack:hover {
+  animation: 0.4s ease-in-out forwards buttonHover;
+}
+
+.slideimg {
+  max-height: 29.25vw !important;
+  max-width: 52vw !important;
+  min-height: 29.25vw !important;
+  min-width: 52vw !important;
+  margin-bottom: 0 !important;
+  margin-top: auto !important;
+  z-index: -10 !important;
+}
+@media (max-width: 768px) {
+  .slideimg {
+    max-height: 39.375vw !important;
+    max-width: 70vw !important;
+    min-height: 39.375vw !important;
+    min-width: 70vw !important;
+  }
+  .right-btn {
+    left: 85vw !important;
+  }
+  .embla {
+    height: 85vh;
+    padding-bottom: 2.5vh;
+    padding-top: 2.5vh;
+  }
+}
+.w-3\/4 {
+  width: 75%;
+}
+.nav-width {
+  width: 26.66%;
+}
+
+@keyframes buttonHover {
+  0% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    background-color: rgba(0,0,0,1)
+  }
 }
