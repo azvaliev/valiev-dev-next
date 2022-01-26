@@ -1,16 +1,9 @@
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./components/*.{js}",
-    "./components/Testimonials/*.{js}",
-    "./components/Testimonials/Testimonials.js",
-    "./components/Testimonials/TestimonialCard.js",
-    "./components/SimpleSection.js",
-    "./components/Showcase/*.{js,jsx}",
-    "./components/Nav/Navbar.{js,jsx}",
-    "./components/Nav/NavItem.{js,jsx}",
-    "./pages/index.js"
+    "./pages/**/*.js",
+    "./pages/**/*.jsx",
+    "./components/**/*.js",
+    "./components/**/*.jsx",
   ],
   theme: {
     extend: {
