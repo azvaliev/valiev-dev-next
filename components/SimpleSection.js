@@ -14,8 +14,8 @@ const SimpleSection = props => {
             {props.text}<br/><br/>
             {props.contact ? 
             <>
-            <a href="mailto:valiev.dev@gmail.com">Email me</a> at <span className="underline">valiev.dev@gmail.com</span><br/>
-            Alternatively, I am also available on <a href="https://www.linkedin.com/in/azatvaliev/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:valiev.dev@gmail.com" className="underline font-bold">Email me</a> at <span className="font-bold">valiev.dev@gmail.com</span><br/>
+            Alternatively, I am also available on <a href="https://www.linkedin.com/in/azatvaliev/" target="_blank" rel="noopener" className="font-bold underline">LinkedIn</a>
             </> : props.textf}
             </p>
             </div>
