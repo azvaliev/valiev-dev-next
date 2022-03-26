@@ -40,7 +40,7 @@ const Timeline = () => {
 						description={`I'm currently working a few Web3 projects, such as a messaging app that allows for highly secure, encrypted communication between Solana addresses`} 
 						date="Late 2021 - Present"
 						buttonText={"Meta Message - WIP"}
-						buttonLink={""}
+						buttonLink={"https://meta-message-f1uod8qkp-azatvaliev.vercel.app/welcome"}
 						icons={[{img: "/img/techicons/react.png", alt: "React"}, {img: "/img/techicons/nextjs.png", alt: "Next JS"}, {img: "/img/techicons/node.png", alt: "Node JS"}, {img: "/img/techicons/redis.png", alt: "Redis"}, {img: "/img/techicons/solana.png", alt: "Solana"}]}
 						pos={standardPos} left />
 
@@ -52,7 +52,7 @@ const Timeline = () => {
 						description={`An interest in Cybersecurity led me to release my first app, Wifi Manager. It let users easily see details about network connection, and accumulated several thousand downloads`} 
 						date="March 2016"
 						buttonText={"View on Google Play"}
-						buttonLink={""}
+						buttonLink={"https://play.google.com/store/apps/details?id=azat.wifimanager"}
 						icons={[{img: "/img/techicons/java.png", alt: "Java"}, {img: "/img/techicons/android.webp", alt: "Android"}, {img: "/img/techicons/xml.png", alt: "XML"}, {img: "/img/techicons/wifi.png", alt: "Networking"}]}
 						pos="25%" />
 					
