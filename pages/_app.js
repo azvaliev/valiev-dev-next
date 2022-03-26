@@ -1,8 +1,7 @@
 import Navbar from "../components/Nav/Navbar.js";
 import Head from 'next/head';
-import '../styles/globals.css';
 import '../styles/fonts.css';
-import 'tailwindcss/tailwind.css'
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (

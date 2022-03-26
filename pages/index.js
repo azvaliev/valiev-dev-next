@@ -5,24 +5,23 @@ import Carousel from "../components/Showcase/Carousel";
 import Button from "../components/Button";
 import Testimonials from "../components/Testimonials/Testimonials";
 import SimpleSection from "../components/SimpleSection";
+import Timeline from "../components/Showcase/Timeline";
 
 
-const Home = () => {
-
-
-  const MainBG = styled.div`
+const MainBG = styled.div`
   width: 100%;
   height: 100vh;
-  `;
-  const IntroWrapper = styled.div`
+`;
+const IntroWrapper = styled.div`
   height: 90vh;
   width: 100%;
   margin-top: -90vh;
-  `;
-  const Intro = styled.div`
+`;
+const Intro = styled.div`
   margin-top: 30vh;
-  `;
+`;
 
+const Home = () => {
 
   return (
     <div>
@@ -35,7 +34,7 @@ const Home = () => {
           Hi, my name is Azat
         </h1>
         
-        <h3 className="text-2xl md:text-25xl text-black mx-8 lg:mx-auto text-center mt-2 font-medium">
+        <h2 className="text-2xl md:text-25xl text-black mx-8 lg:mx-auto text-center mt-2 font-medium">
           I'm a Seattle based Web Developer with experience in&nbsp;
           <TextLoop
           children={[
@@ -47,21 +46,13 @@ const Home = () => {
           interval={2000}
           >
           </TextLoop>
-        </h3>
+        </h2>
         <div className="border-t-1 rounded-sm pb-2 w-2/3 mx-auto border-gray-400 ">
         </div>
         <Button text="View My Work" link="#Portfolio" external={false}/>
         </Intro>
       </IntroWrapper>
-      <SimpleSection title="PORTFOLIO"
-      text={`Below you'll find projects that I have recently worked on,
-          ranging from guided meditation websites to a professional
-          online presence for a Lawn/Irrigation company.`}
-      textf={`With every client, I focus on being open, communicative, and creating
-          a great, modern, professional product.`}
-      gray={true}
-      />
-      <Carousel/>
+      <Timeline />
       <div className="flex flex-col bg-gray-100 w-full">
         <h1 className="montserrat text-5xl pt-8 md:py-8 font-extralight mx-auto">
           Testimonials

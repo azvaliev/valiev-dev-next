@@ -3,18 +3,19 @@ import NavItem from "./NavItem";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const Navbar = () => {
-    const Nav = styled.div`
+const Nav = styled.div`
     height: 10vh;
     position: fixed;
-    `;
-    const NavImage = styled.div`
+`;
+const NavImage = styled.div`
     height: 8vh;
     width: 8vh;
-    `;
+`;
     const NavImageWrapper = styled.a`
     height: 8vh;
-    `;
+`;
+
+const Navbar = () => {
 
     const [imgD, setImgD] = useState(0);
 
@@ -31,7 +32,7 @@ const Navbar = () => {
             <div className=" w-1/5 md:px-4 md:w-auto my-auto">
             <NavImage className="flex m-auto mx-auto">
                 <NavImageWrapper href="https://www.linkedin.com/in/azatvaliev/" className="m-auto" target="_blank" rel="noopener">
-                <Image src="/img/utilities/linkedin.png" layout="fixed" width={imgD} height={imgD} objectFit="contain"/>
+                <Image src="/img/utilities/linkedin.png" layout="fixed" width={imgD} height={imgD} />
                 </NavImageWrapper>
             </NavImage>
             </div>

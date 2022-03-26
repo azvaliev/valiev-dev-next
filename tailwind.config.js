@@ -1,14 +1,14 @@
 module.exports = {
   content: [
-    "./pages/**/*.js",
-    "./pages/**/*.jsx",
-    "./components/**/*.js",
-    "./components/**/*.jsx",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
         'primary': '#00ff80',
+        'accent1': '#9649CB',
+        'accent2': '#7F0799',
         'boldblue': '#33CCFF',
         'azure': '#007FFF',
         'mainbg': '#39375B',
