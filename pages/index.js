@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
 import { TextLoop } from "react-text-loop-next";
-import Carousel from "../components/Showcase/Carousel";
 import Button from "../components/Button";
 import Testimonials from "../components/Testimonials/Testimonials";
 import SimpleSection from "../components/SimpleSection";
