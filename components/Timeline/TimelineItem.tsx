@@ -34,7 +34,7 @@ const TimelineItem = ({
 				<p className="my-2">{description}</p>
 				{internalLink ? 
 
-					<Link href={buttonLink} >
+					<Link href={buttonLink} passHref>
 						<ViewWorkButton className="cursor-pointer everett-medium text-xl border-boldblue hover:bg-gradient-to-r hover:from-boldblue hover:to-azure hover:border-white hover:text-white">
 							{buttonText}
 						</ViewWorkButton>
