@@ -37,6 +37,7 @@ const Timeline = () => {
 								// internalLink={data.internalLink}
 								icons={data.icons}
 								pos={data.pos}
+								isMobile={isMobile}
 								left />						
 						)}
 					</div>
@@ -57,6 +58,7 @@ const Timeline = () => {
 							// internalLink={data.internalLink}
 							icons={data.icons}
 							pos={idx === 0 ? "0" : standardPos}
+							isMobile={isMobile}
 							/>		
 					) : (
 						TimelineData.filter(data => !data.left)
@@ -72,6 +74,7 @@ const Timeline = () => {
 								// internalLink={data.internalLink}
 								icons={data.icons}
 								pos={data.pos}
+								isMobile={isMobile}
 								/>
 						))
 					}

@@ -95,12 +95,14 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "View recent projects",
 		buttonLink: "https://enhancedceo.com",
 		icons: [
-			{img: "/img/techicons/react.webp", alt: "React"},
+			{img: "/img/techicons/react.webp", alt: "React JS"},
 			{img: "/img/techicons/nextjs.png", alt: "Next JS"},
 			{img: "/img/techicons/typescript.svg", alt: "TypeScript"},
+			{img: "/img/techicons/cypress.webp", alt: "Cypress"},
 			{img: "/img/techicons/node.webp", alt: "Node JS"},
 			{img: "/img/techicons/python.webp", alt: "Python"},
 			{img: "/img/techicons/mongodb.png", alt: "Mongo DB"},
+			{img: "/img/techicons/aws.webp", alt: "AWS"}
 		],
 		pos: standardPos, 
 	}, {
@@ -111,12 +113,14 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "Meta Message - WIP",
 		buttonLink: "https://meta-message-f1uod8qkp-azatvaliev.vercel.app/welcome",
 		icons: [
-			{img: "/img/techicons/react.webp", alt: "React"},
+			{img: "/img/techicons/react.webp", alt: "React JS"},
 			{img: "/img/techicons/nextjs.png", alt: "Next JS"},
 			{img: "/img/techicons/typescript.svg", alt: "TypeScript"},
+			{img: "/img/techicons/cypress.webp", alt: "Cypress"},
+			{img: "/img/techicons/tailwind.webp", alt: "TailwindCSS"},
 			{img: "/img/techicons/node.webp", alt: "Node JS"},
 			{img: "/img/techicons/redis.png", alt: "Redis"},
-			{img: "/img/techicons/solana.webp", alt: "Solana"}
+			{img: "/img/techicons/solana.webp", alt: "Solana"},
 		],
 		pos: standardPos,
 		left: true,

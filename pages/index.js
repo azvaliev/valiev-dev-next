@@ -42,7 +42,8 @@ const Home = () => {
           children={[
             "React JS",
             "Next JS",
-            "Modern Web Design"
+            "TypeScript",
+            "Node / Express"
           ]}
           adjustingSpeed={300}
           interval={2000}
