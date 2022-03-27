@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import NavItem from "./NavItem";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 const Nav = styled.div`
     height: 10vh;
