@@ -11,34 +11,19 @@ const NavImage = styled.div`
     height: 8vh;
     width: 8vh;
 `;
-    const NavImageWrapper = styled.a`
-    height: 8vh;
-`;
 
 const Navbar = () => {
 
-    const [imgD, setImgD] = useState(0);
-
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setImgD(window.innerHeight * 0.08);
-          },
-          40 // every 40ms
-        );
-      }, []);
-
     return (
-        <Nav className="w-full flex flex-row-reverse z-30 white montserrat font-extralight">
-            <div className=" w-1/5 md:px-4 md:w-auto my-auto">
-            <NavImage className="flex m-auto mx-auto">
-                <NavImageWrapper href="https://www.linkedin.com/in/azatvaliev/" className="m-auto" target="_blank" rel="noopener">
-                <Image src="/img/utilities/linkedin.png" layout="fixed" width={imgD} height={imgD} />
-                </NavImageWrapper>
-            </NavImage>
+        <Nav className="w-full flex flex-row-reverse z-30 white montserrat font-extralight min-h-[10vh]">
+            <div className="relative right-3 md:right-4 w-[5vh] h-[5vh] md:w-[7vh] md:h-[7vh] my-auto">
+                <a href="https://www.linkedin.com/in/azatvaliev/" className="m-auto" target="_blank" rel="noopener">
+                    <Image src="/img/utilities/linkedinn.png" layout="fill" objectFit="contain"/>
+                </a>
             </div>
-            <NavItem name="Contact"/>
+            <NavItem name="Contact" className="mr-6 md:mr-10"/>
             <NavItem name="About"/>
-            <NavItem name="Portfolio" className="ml-8 md:mx-4"/>
+            <NavItem name="Portfolio" className="md:ml-auto"/>
 
         </Nav>
     )
