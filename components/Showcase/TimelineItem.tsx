@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { TimelinePoint } from "./TimelineData";
 import { Main, TimelineBubble, ViewWorkButton } from "./StyledTimeline";
+import Link from 'next/link';
 
 interface Props extends TimelinePoint {
 	isMobile: boolean
@@ -16,6 +17,7 @@ const TimelineItem = ({
 	left,
 	buttonText, 
 	buttonLink, 
+	internalLink,
 	icons
 } : Props) => {
 
@@ -30,11 +32,20 @@ const TimelineItem = ({
 			<Main className={`flex flex-col text-center mt-auto mb-0 p-2 bg-gray-50 rounded-md ${left && "ml-auto"}`}>
 				<h5 className="text-2xl underline everett-medium">{title}</h5>
 				<p className="my-2">{description}</p>
-				<a href={buttonLink} target="_blank" className="cursor-pointer">
-					<ViewWorkButton className="everett-medium text-xl border-boldblue hover:bg-gradient-to-r hover:from-boldblue hover:to-azure hover:border-white hover:text-white">
-						{buttonText}
-					</ViewWorkButton>
-				</a>
+				{internalLink ? 
+
+					<Link href={buttonLink} >
+						<ViewWorkButton className="cursor-pointer everett-medium text-xl border-boldblue hover:bg-gradient-to-r hover:from-boldblue hover:to-azure hover:border-white hover:text-white">
+							{buttonText}
+						</ViewWorkButton>
+					</Link>
+				:
+					<a href={buttonLink} target="_blank" className="cursor-pointer">
+						<ViewWorkButton className="everett-medium text-xl border-boldblue hover:bg-gradient-to-r hover:from-boldblue hover:to-azure hover:border-white hover:text-white">
+							{buttonText}
+						</ViewWorkButton>
+					</a>
+				}
 				<div className="flex flex-wrap mx-auto w-fit mt-2 mb-4 max-w-[45vw] sm:max-w-[20vw] lg:max-w-[15vw]">
 					{icons.map((icon, idx) => 
 						<div 
