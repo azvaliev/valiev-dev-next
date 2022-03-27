@@ -1,6 +1,7 @@
 export interface Icon {
 	img: string;
 	alt: string;
+	priority?: boolean;
 }
 
 export interface TimelinePoint {
@@ -27,9 +28,9 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "View My Apps",
 		buttonLink: "https://play.google.com/store/apps/dev?id=5613471573391791221",
 		icons: [
-			{img: "/img/techicons/java.webp",alt: "Java"},
-			{img: "/img/techicons/android.webp", alt: "Android"},
-			{img: "/img/techicons/xml.webp", alt: "XML"}
+			{img: "/img/techicons/java.webp",alt: "Java", priority: true},
+			{img: "/img/techicons/android.webp", alt: "Android", priority: true},
+			{img: "/img/techicons/xml.webp", alt: "XML", priority: true}
 		],
 		pos: "0",
 		left: true,
@@ -40,9 +41,9 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "View on Google Play",
 		buttonLink: "https://play.google.com/store/apps/details?id=azat.wifimanager",
 		icons: [
-			{img: "/img/techicons/java.webp", alt: "Java"},
-			{img: "/img/techicons/android.webp", alt: "Android"},
-			{img: "/img/techicons/xml.webp", alt: "XML"},
+			{img: "/img/techicons/java.webp", alt: "Java", priority: true},
+			{img: "/img/techicons/android.webp", alt: "Android", priority: true},
+			{img: "/img/techicons/xml.webp", alt: "XML", priority: true},
 		],
 		pos: "25%"
 	}, {
@@ -52,9 +53,9 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "View on Google Play",
 		buttonLink: "https://play.google.com/store/apps/dev?id=5613471573391791221",
 		icons: [
-			{img: "/img/techicons/java.webp", alt: "Java"},
-			{img: "/img/techicons/android.webp", alt: "Android"},
-			{img: "/img/techicons/xml.webp", alt: "XML"},
+			{img: "/img/techicons/java.webp", alt: "Java", priority: true},
+			{img: "/img/techicons/android.webp", alt: "Android", priority: true},
+			{img: "/img/techicons/xml.webp", alt: "XML", priority: true},
 		],
 		pos: standardPos, 
 		left: true,

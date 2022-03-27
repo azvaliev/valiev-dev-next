@@ -57,7 +57,7 @@ const TimelineItem = ({
 								${[3,7].includes(idx) && !isMobile ? "mr-auto": null}
 								${!isMobile && icons.length === 6 ? idx === 4 ? " ml-auto" : idx === 5 ? " mr-auto" : null : null}
 								`}>
-							<Image src={icon.img} alt={icon.alt} layout="fill" objectFit="contain" />
+							<Image src={icon.img} alt={icon.alt} layout="fill" objectFit="contain" priority={icon.priority}/>
 						</div>
 					)}
 				</div>
