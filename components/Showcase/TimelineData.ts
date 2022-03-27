@@ -27,9 +27,9 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "View My Apps",
 		buttonLink: "https://play.google.com/store/apps/dev?id=5613471573391791221",
 		icons: [
-			{img: "/img/techicons/java.png",alt: "Java"},
+			{img: "/img/techicons/java.webp",alt: "Java"},
 			{img: "/img/techicons/android.webp", alt: "Android"},
-			{img: "/img/techicons/xml.png", alt: "XML"}
+			{img: "/img/techicons/xml.webp", alt: "XML"}
 		],
 		pos: "0",
 		left: true,
@@ -40,9 +40,9 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "View on Google Play",
 		buttonLink: "https://play.google.com/store/apps/details?id=azat.wifimanager",
 		icons: [
-			{img: "/img/techicons/java.png", alt: "Java"},
+			{img: "/img/techicons/java.webp", alt: "Java"},
 			{img: "/img/techicons/android.webp", alt: "Android"},
-			{img: "/img/techicons/xml.png", alt: "XML"},
+			{img: "/img/techicons/xml.webp", alt: "XML"},
 		],
 		pos: "25%"
 	}, {
@@ -52,9 +52,9 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "View on Google Play",
 		buttonLink: "https://play.google.com/store/apps/dev?id=5613471573391791221",
 		icons: [
-			{img: "/img/techicons/java.png", alt: "Java"},
+			{img: "/img/techicons/java.webp", alt: "Java"},
 			{img: "/img/techicons/android.webp", alt: "Android"},
-			{img: "/img/techicons/xml.png", alt: "XML"},
+			{img: "/img/techicons/xml.webp", alt: "XML"},
 		],
 		pos: standardPos, 
 		left: true,
@@ -65,8 +65,8 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "Asphalt Assault",
 		buttonLink: "https://asphalt-assault.glitch.me",
 		icons: [
-			{img: "/img/techicons/HTML.png", alt: "HTML"},
-			{img: "/img/techicons/CSS.png", alt: "CSS"},
+			{img: "/img/techicons/HTML.webp", alt: "HTML"},
+			{img: "/img/techicons/CSS.webp", alt: "CSS"},
 			{img: "/img/techicons/javascript.png", alt: "JavaScript"}
 		],
 		pos: standardPos
@@ -78,12 +78,12 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonLink: "/reccomendation",
 		internalLink: true,
 		icons: [
-			{img: "/img/techicons/HTML.png", alt: "HTML"},
-			{img: "/img/techicons/CSS.png", alt: "CSS"},
+			{img: "/img/techicons/HTML.webp", alt: "HTML"},
+			{img: "/img/techicons/CSS.webp", alt: "CSS"},
 			{img: "/img/techicons/javascript.png", alt: "JavaScript"},
-			{img: "/img/techicons/python.png", alt: "Python"},
+			{img: "/img/techicons/python.webp", alt: "Python"},
 			{img: "/img/techicons/git.png", alt: "Git"},
-			{img: "/img/techicons/linux.jpeg", alt: "Linux"},
+			{img: "/img/techicons/linux.webp", alt: "Linux"},
 		],
 		pos: "15%",
 		left: true,
@@ -95,11 +95,11 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "View recent projects",
 		buttonLink: "https://enhancedceo.com",
 		icons: [
-			{img: "/img/techicons/react.png", alt: "React"},
+			{img: "/img/techicons/react.webp", alt: "React"},
 			{img: "/img/techicons/nextjs.png", alt: "Next JS"},
 			{img: "/img/techicons/typescript.svg", alt: "TypeScript"},
-			{img: "/img/techicons/node.png", alt: "Node JS"},
-			{img: "/img/techicons/python.png", alt: "Python"},
+			{img: "/img/techicons/node.webp", alt: "Node JS"},
+			{img: "/img/techicons/python.webp", alt: "Python"},
 			{img: "/img/techicons/mongodb.png", alt: "Mongo DB"},
 		],
 		pos: standardPos, 
@@ -111,12 +111,12 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "Meta Message - WIP",
 		buttonLink: "https://meta-message-f1uod8qkp-azatvaliev.vercel.app/welcome",
 		icons: [
-			{img: "/img/techicons/react.png", alt: "React"},
+			{img: "/img/techicons/react.webp", alt: "React"},
 			{img: "/img/techicons/nextjs.png", alt: "Next JS"},
 			{img: "/img/techicons/typescript.svg", alt: "TypeScript"},
-			{img: "/img/techicons/node.png", alt: "Node JS"},
+			{img: "/img/techicons/node.webp", alt: "Node JS"},
 			{img: "/img/techicons/redis.png", alt: "Redis"},
-			{img: "/img/techicons/solana.png", alt: "Solana"}
+			{img: "/img/techicons/solana.webp", alt: "Solana"}
 		],
 		pos: standardPos,
 		left: true,
