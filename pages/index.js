@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <div>
       <MainBG className="-z-50">
-        <Image src='/img/seattle2.webp' layout="fill" objectFit='contain' placeholder='blur' className="-z-50 bg-main"/>
+        <Image src='/img/seattle2.webp' layout="fill" objectFit='contain' className="-z-50 bg-main" priority/>
       </MainBG>
       <IntroWrapper className="flex flex-col w-full white ">
         <Intro className="flex flex-col mx-auto w-full pb-2">
