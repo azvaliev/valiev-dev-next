@@ -4,23 +4,21 @@ import { TextLoop } from "react-text-loop-next";
 import Button from "../components/Button";
 import Testimonials from "../components/Testimonials/Testimonials";
 import SimpleSection from "../components/SimpleSection";
-import Timeline from "../components/Showcase/Timeline";
+import Timeline from "../components/Timeline/Timeline";
 
 
 const MainBG = styled.div`
   width: 100%;
   height: 100vh;
+  position: relative;
+  @media (max-width: 768px) {
+    max-height: 90vh;
+  }
 `;
 const IntroWrapper = styled.div`
   height: 90vh;
   width: 100%;
   margin-top: -90vh;
-`;
-const Intro = styled.div`
-  margin-top: 30vh;
-  @media (max-width: 768px) {
-    margin-top: 20vh;
-  }
 `;
 
 const Home = () => {
@@ -31,7 +29,7 @@ const Home = () => {
         <Image src='/img/seattle2.webp' layout="fill" objectFit='contain' className="-z-50 bg-main" priority/>
       </MainBG>
       <IntroWrapper className="flex flex-col w-full white ">
-        <Intro className="flex flex-col mx-auto w-full pb-2">
+        <div className="flex flex-col mx-auto w-full pb-2 mt-[30vh]">
         <h1 className="text-3xl text-black montserrat font-extralight text-center">
           Hi, my name is Azat
         </h1>
@@ -53,7 +51,7 @@ const Home = () => {
         <div className="border-t-1 rounded-sm pb-2 w-2/3 mx-auto border-gray-400 ">
         </div>
         <Button text="View My Work" link="#Portfolio" external={false}/>
-        </Intro>
+        </div>
       </IntroWrapper>
       <Timeline />
       <div className="flex flex-col bg-gray-100 w-full">
@@ -64,8 +62,8 @@ const Home = () => {
       </div>
       <SimpleSection title="About Me" id="About"
       text={`I'm a self-taught web developer, beginning my education at 12, 
-      with 4 years of professional experience. I strive to deliver modern,
-       elegant, responsive websites for both individuals and businesses.`}
+      with 4 years of professional experience as freelance & at several companies.
+      While I do specialize in front-end currently, I am well capable on the full stack`}
       textf={`Having started multiple businesses myself, I am able to bring a
       unique and valuable perspective along with my skills to the table.`}
       gray={false}
