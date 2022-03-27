@@ -46,16 +46,16 @@ const TimelineItem = ({
 						</ViewWorkButton>
 					</a>
 				}
-				<div className="flex flex-wrap mx-auto w-fit mt-2 mb-4 max-w-[45vw] sm:max-w-[20vw] lg:max-w-[15vw]">
+				<div className="flex flex-wrap mx-auto w-fit mt-2 mb-4 max-w-[50vw] sm:max-w-[20vw] lg:max-w-[15vw]">
 					{icons.map((icon, idx) => 
 						<div 
 							key={idx} title={icon.alt} 
-							className={`relative mt-4 h-[9.5vw] w-[9.5vw] md:h-[3.5vw] md:w-[3.5vw] lg:h-[2.5vw] lg:w-[2.5vw] mx-2 px-auto 
+							className={`relative mt-4 h-[8.75vw] w-[8.75vw] md:h-[3.5vw] md:w-[3.5vw] lg:h-[2.5vw] lg:w-[2.5vw] mx-2 px-auto 
 								${[0,3].includes(idx) && isMobile ? "ml-auto" : null} 
 								${[2,5].includes(idx) && isMobile ? "mr-auto": null}
 								${[0,4].includes(idx) && !isMobile ? "ml-auto" : null} 
 								${[3,7].includes(idx) && !isMobile ? "mr-auto": null}
-								${!isMobile && icons.length === 6 ? idx === 4 ? " ml-auto" : idx === 5 ? " mr-auto" : null : null}
+								${icons.length === 6 ? idx === 4 ? " ml-auto" : idx === 5 ? " mr-auto" : null : null}
 								`}>
 							<Image src={icon.img} alt={icon.alt} layout="fill" objectFit="contain" priority={icon.priority}/>
 						</div>
