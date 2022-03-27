@@ -40,7 +40,7 @@ const TimelineItem = ({
 						</ViewWorkButton>
 					</Link>
 				:
-					<a href={buttonLink} target="_blank" className="cursor-pointer">
+					<a href={buttonLink} target="_blank" className="cursor-pointer" rel="noopener">
 						<ViewWorkButton className="everett-medium text-xl border-boldblue hover:bg-gradient-to-r hover:from-boldblue hover:to-azure hover:border-white hover:text-white">
 							{buttonText}
 						</ViewWorkButton>
