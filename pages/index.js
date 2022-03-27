@@ -18,6 +18,9 @@ const IntroWrapper = styled.div`
 `;
 const Intro = styled.div`
   margin-top: 30vh;
+  @media (max-width: 768px) {
+    margin-top: 20vh;
+  }
 `;
 
 const Home = () => {

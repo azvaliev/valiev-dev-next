@@ -9,7 +9,7 @@ const config = {
 						<h2 className="text-3xl text-center">
 							Try
 							<a href="https://drive.google.com/file/d/1r1xNGhvgc6Lb_1zK6qNAwe3FkU--P2_7/view?usp=sharing" 
-								target="_blank">
+								target="_blank" className="text-azure">
 								this link
 							</a>
 						</h2>
@@ -27,7 +27,7 @@ const Reccomendation = () => {
 	return (
 		<>
 			<div className="h-[10vh] bg-white"/>
-			<div className="h-[90vh] px-[25%] mx-auto bg-coal" id="letterofrec"></div>
+			<div className="sm:h-[90vh] px-[25%] mx-auto sm:bg-coal" id="letterofrec"></div>
 		</>
 	)
 }
