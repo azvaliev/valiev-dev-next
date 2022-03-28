@@ -41,7 +41,7 @@ const Project = ({
 					<Image src={mockup} alt={alt} layout="fill" objectFit="contain" priority={preload}/>
 				</div>
 			}
-			<div className="flex flex-wrap flex-col ml-4 max-w-[75vw] max-h-[75vh] shadow-lg p-8">
+			<div className="flex flex-wrap flex-col mx-auto sm:ml-4 w-[90vw] sm:max-w-[75vw] max-h-[75vh] shadow-lg p-8">
 				<h2 className="text-5xl textcenter everett-medium border-b-2 border-gray-800">
 					{title}
 				</h2>

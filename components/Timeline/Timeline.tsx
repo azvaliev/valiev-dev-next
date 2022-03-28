@@ -1,20 +1,12 @@
-import { useLayoutEffect, useState } from "react";
+import { useContext } from "react";
 import TimelineItem from "./TimelineItem";
 import { TimelineData, standardPos } from "./TimelineData";
+import { Mobile } from "../../pages/_app"
 
 
 const Timeline = () => {
 
-	const [isMobile, setIsMobile] = useState(false)
-	
-	useLayoutEffect(() => {
-		const updateIsMobile = () => window.innerWidth < 768 ? setIsMobile(true) : setIsMobile(false); 
-
-		window.addEventListener("resize", updateIsMobile);
-		updateIsMobile();
-
-		return () => window.removeEventListener("resize", updateIsMobile);
-	}, [])
+	const isMobile = useContext(Mobile)
 
 	return (
 		<div className="pb-20 pt-10">

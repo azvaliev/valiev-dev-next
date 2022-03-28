@@ -1,12 +1,26 @@
 import Navbar from "../components/Nav/Navbar.js";
 import Head from 'next/head';
 import { useRouter } from "next/router";
+import { useState, useEffect, createContext } from "react"
 import '../styles/fonts.css';
 import '../styles/globals.css';
+
+export const Mobile = createContext()
 
 function MyApp({ Component, pageProps }) {
 
   const router = useRouter();
+	
+  const [isMobile, setIsMobile] = useState(false);
+	
+	useEffect(() => {
+		const updateIsMobile = () => window.innerWidth < 768 ? setIsMobile(true) : setIsMobile(false); 
+
+		window.addEventListener("resize", updateIsMobile);
+		updateIsMobile();
+
+		return () => window.removeEventListener("resize", updateIsMobile);
+	}, [])
 
   return (
   <>
@@ -22,7 +36,9 @@ function MyApp({ Component, pageProps }) {
     </Head>
     <div className="app" >
       <Navbar page={router.pathname} />
-      <Component {...pageProps} />
+      <Mobile.Provider value={isMobile}>
+        <Component {...pageProps} />
+      </Mobile.Provider>
     </div>
 
   </>
