@@ -1,9 +1,13 @@
 import Navbar from "../components/Nav/Navbar.js";
 import Head from 'next/head';
+import { useRouter } from "next/router";
 import '../styles/fonts.css';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
+
+  const router = useRouter();
+
   return (
   <>
     <Head>
@@ -17,7 +21,7 @@ function MyApp({ Component, pageProps }) {
 
     </Head>
     <div className="app" >
-      <Navbar/>
+      <Navbar page={router.pathname} />
       <Component {...pageProps} />
     </div>
 

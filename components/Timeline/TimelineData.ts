@@ -1,3 +1,5 @@
+import icons from "../Icons";
+
 export interface Icon {
 	img: string;
 	alt: string;
@@ -28,9 +30,9 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "View My Apps",
 		buttonLink: "https://play.google.com/store/apps/dev?id=5613471573391791221",
 		icons: [
-			{img: "/img/techicons/java.webp",alt: "Java", priority: true},
-			{img: "/img/techicons/android.webp", alt: "Android", priority: true},
-			{img: "/img/techicons/xml.webp", alt: "XML", priority: true}
+			icons.java,
+			icons.android,
+			icons.xml,
 		],
 		pos: "0",
 		left: true,
@@ -41,9 +43,9 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "View on Google Play",
 		buttonLink: "https://play.google.com/store/apps/details?id=azat.wifimanager",
 		icons: [
-			{img: "/img/techicons/java.webp", alt: "Java", priority: true},
-			{img: "/img/techicons/android.webp", alt: "Android", priority: true},
-			{img: "/img/techicons/xml.webp", alt: "XML", priority: true},
+			icons.java,
+			icons.android,
+			icons.xml,
 		],
 		pos: "25%"
 	}, {
@@ -53,9 +55,9 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "View on Google Play",
 		buttonLink: "https://play.google.com/store/apps/dev?id=5613471573391791221",
 		icons: [
-			{img: "/img/techicons/java.webp", alt: "Java", priority: true},
-			{img: "/img/techicons/android.webp", alt: "Android", priority: true},
-			{img: "/img/techicons/xml.webp", alt: "XML", priority: true},
+			icons.java,
+			icons.android,
+			icons.xml,
 		],
 		pos: standardPos, 
 		left: true,
@@ -66,9 +68,9 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "Asphalt Assault",
 		buttonLink: "https://asphalt-assault.glitch.me",
 		icons: [
-			{img: "/img/techicons/HTML.webp", alt: "HTML"},
-			{img: "/img/techicons/CSS.webp", alt: "CSS"},
-			{img: "/img/techicons/javascript.png", alt: "JavaScript"}
+			icons.html,
+			icons.css, 
+			icons.js,
 		],
 		pos: standardPos
 	}, {
@@ -79,12 +81,12 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonLink: "/reccomendation",
 		internalLink: true,
 		icons: [
-			{img: "/img/techicons/HTML.webp", alt: "HTML"},
-			{img: "/img/techicons/CSS.webp", alt: "CSS"},
-			{img: "/img/techicons/javascript.png", alt: "JavaScript"},
-			{img: "/img/techicons/python.webp", alt: "Python"},
-			{img: "/img/techicons/git.png", alt: "Git"},
-			{img: "/img/techicons/linux.webp", alt: "Linux"},
+			icons.html,
+			icons.css, 
+			icons.js,
+			icons.python,
+			icons.git,
+			icons.linux,
 		],
 		pos: "15%",
 		left: true,
@@ -96,14 +98,14 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "View recent projects",
 		buttonLink: "https://enhancedceo.com",
 		icons: [
-			{img: "/img/techicons/react.webp", alt: "React JS"},
-			{img: "/img/techicons/nextjs.png", alt: "Next JS"},
-			{img: "/img/techicons/typescript.svg", alt: "TypeScript"},
-			{img: "/img/techicons/cypress.webp", alt: "Cypress"},
-			{img: "/img/techicons/node.webp", alt: "Node JS"},
-			{img: "/img/techicons/python.webp", alt: "Python"},
-			{img: "/img/techicons/mongodb.png", alt: "Mongo DB"},
-			{img: "/img/techicons/aws.webp", alt: "AWS"}
+			icons.react,
+			icons.next,
+			icons.ts,
+			icons.cypress,
+			icons.node,
+			icons.python,
+			icons.mongodb,
+			icons.aws,
 		],
 		pos: standardPos, 
 	}, {
@@ -114,14 +116,14 @@ export const TimelineData: Array<TimelinePoint> = [
 		buttonText: "Meta Message - WIP",
 		buttonLink: "https://meta-message-f1uod8qkp-azatvaliev.vercel.app/welcome",
 		icons: [
-			{img: "/img/techicons/react.webp", alt: "React JS"},
-			{img: "/img/techicons/nextjs.png", alt: "Next JS"},
-			{img: "/img/techicons/typescript.svg", alt: "TypeScript"},
-			{img: "/img/techicons/cypress.webp", alt: "Cypress"},
-			{img: "/img/techicons/tailwind.webp", alt: "TailwindCSS"},
-			{img: "/img/techicons/node.webp", alt: "Node JS"},
-			{img: "/img/techicons/redis.png", alt: "Redis"},
-			{img: "/img/techicons/solana.webp", alt: "Solana"},
+			icons.react,
+			icons.next,
+			icons.ts,
+			icons.cypress,	
+			icons.tailwind,
+			icons.node,
+			icons.redis,
+			icons.solana
 		],
 		pos: standardPos,
 		left: true,

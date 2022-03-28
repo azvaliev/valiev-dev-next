@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import Image from "next/image";
+import Link from "next/link";
 import { TextLoop } from "react-text-loop-next";
 import Button from "../components/Button";
 import Testimonials from "../components/Testimonials/Testimonials";
 import SimpleSection from "../components/SimpleSection";
 import Timeline from "../components/Timeline/Timeline";
-
 
 const MainBG = styled.div`
   width: 100%;
@@ -24,7 +24,7 @@ const IntroWrapper = styled.div`
 const Home = () => {
 
   return (
-    <div>
+    <div className="flex flex-col">
       <MainBG className="-z-50">
         <Image src='/img/seattle2.webp' layout="fill" objectFit='contain' className="-z-50 bg-main" priority/>
       </MainBG>
@@ -50,10 +50,13 @@ const Home = () => {
         </h2>
         <div className="border-t-1 rounded-sm pb-2 w-2/3 mx-auto border-gray-400 ">
         </div>
-        <Button text="View My Work" link="#Portfolio" external={false}/>
+        <Button text="View My Work" link="/projects" />
         </div>
       </IntroWrapper>
       <Timeline />
+      <div className="mx-auto mt-2 pb-16 w-fit">
+      <Button text="View Recent Projects" link="/projects" className="text-5xl transition-all scale-100 hover:scale-110" />
+      </div>
       <div className="flex flex-col bg-gray-100 w-full">
         <h1 className="montserrat text-5xl pt-8 md:py-8 font-extralight mx-auto">
           Testimonials

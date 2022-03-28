@@ -11,7 +11,7 @@ const NavImage = styled.div`
     width: 8vh;
 `;
 
-const Navbar = () => {
+const Navbar = ({page}) => {
 
     return (
         <Nav className="w-full flex flex-row-reverse z-30 white montserrat font-extralight min-h-[10vh]">
@@ -20,9 +20,18 @@ const Navbar = () => {
                     <Image src="/img/utilities/linkedin.png" layout="fill" objectFit="contain" priority/>
                 </a>
             </div>
-            <NavItem name="Contact" className="mr-6 md:mr-10"/>
-            <NavItem name="About"/>
-            <NavItem name="Portfolio" className="md:ml-auto"/>
+
+            { page.includes("projects") ?
+                <>
+                    <NavItem link="/" name="home &#8617;" className="mr-8 md:mr-8" />
+                </>
+            :
+                <>
+                    <NavItem name="Contact" className="mr-6 md:mr-10" />
+                    <NavItem name="About" />
+                    <NavItem link="/projects" name="Portfolio" className="md:ml-auto" />
+                </>
+            }
 
         </Nav>
     )

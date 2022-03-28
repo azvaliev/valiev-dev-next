@@ -12,6 +12,9 @@ body {
 .bg-main {
   object-fit: cover !important;
 }
+.inset {
+  border-style: inset;
+}
 
 .open-sans {
   font-family: 'Open Sans', sans-serif;
