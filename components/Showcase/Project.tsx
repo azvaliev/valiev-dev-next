@@ -39,13 +39,13 @@ const Project = ({
 	const isMobile = useContext(Mobile);
 	
 	return (
-		<div className="flex flex-col sm:flex-row max-w-[100vw] pt-2 sm:py-4 overflow-hidden" key={key}>
-			{left && !isMobile ?
-				<div className={`relative mx-auto transition-all hover:scale-110 hover:translate-x-2 ${mobileImg ? "h-[65vh] w-[40vw]": " h-[70vh] w-[40vw]"}`}>
+		<div className="flex flex-col lg:flex-row max-w-[100vw] pt-2 sm:py-4 overflow-hidden" key={key}>
+			{left || isMobile ?
+				<div className={`relative mx-auto transition-all hover:scale-110 sm:hover:translate-x-2 lg:h-[70vh] lg:w-[40vw] w-[80vw] h-[35vh] mt-[6vh]`}>
 					<Image src={mockup} alt={alt} layout="fill" objectFit="contain" priority={preload}/>
 				</div>
 			: null }
-			<div className="flex flex-wrap flex-col mx-auto sm:ml-4 w-[90vw] sm:max-w-[75vw] max-h-[95vh] sm:max-h-[75vh] shadow-lg p-8">
+			<div className="flex flex-wrap flex-col mx-auto lg:ml-4 w-[90vw] md:max-w-[90vw] max-h-[95vh] sm:max-h-[80vh] lg:max-w-[50vw] shadow-lg p-8">
 				<h2 className="text-4xl text-center everett-medium border-b-2 border-gray-800">
 					{title}
 				</h2>
@@ -71,8 +71,8 @@ const Project = ({
 				<h3 className="text-3xl mx-auto mt-8 mb-0 sm:mt-auto everett underline">Technologies Utilized</h3>
 					<TechIconDisplay icons={icons} />
 			</div>
-			{!left || isMobile ?
-				<div className={`relative mx-auto transition-all hover:scale-110 ${mobileImg ? "h-[50vh] sm:h-[65vh] w-[40vw]": "w-[80vw] h-[35vh] mt-[6vh] sm:mt-0 sm:h-[70vh] sm:w-[40vw]"}`}>
+			{!left && !isMobile ?
+				<div className={`relative mx-auto transition-all hover:scale-110 w-[80vw] h-[35vh] mt-[6vh]`}>
 					<Image src={mockup} alt={alt} layout="fill" objectFit="contain" priority={preload}/>
 				</div>
 			: null }

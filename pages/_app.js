@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
   const [isMobile, setIsMobile] = useState(false);
 	
 	useEffect(() => {
-		const updateIsMobile = () => window.innerWidth < 768 ? setIsMobile(true) : setIsMobile(false); 
+		const updateIsMobile = () => window.innerWidth < 1024 ? setIsMobile(true) : setIsMobile(false); 
 
 		window.addEventListener("resize", updateIsMobile);
 		updateIsMobile();
