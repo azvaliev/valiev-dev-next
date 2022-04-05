@@ -13,7 +13,7 @@ const Timeline = () => {
 			<h2 className="montserrat text-5xl font-extralight mb-16 text-center">
 				EXPERIENCE
 			</h2>
-			<div className="flex flex-row w-[90%] mx-auto bg-white">
+			<div className="relative flex flex-row w-[90%] mx-auto bg-white">
 				{!isMobile && 
 					<div className="flex flex-col w-[45vw]">
 						{TimelineData.filter(data => data.left === true)
@@ -34,7 +34,7 @@ const Timeline = () => {
 					</div>
 				}
 				<span className="h-auto w-[0.25vh] mx-auto rounded-2xl bg-slate-400"/>
-				<div className="flex flex-col w-[90vw] sm:w-[45vw] mb-auto">
+				<div className="flex flex-col w-[90vw] lg:w-[45vw] mb-auto">
 				
 					{isMobile ?
 						TimelineData.map((data, idx) => 

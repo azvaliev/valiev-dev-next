@@ -8,13 +8,13 @@ export const TimelineBubble = styled.span`
 	width: 2vw;
 	height: 2vw;
 	position: absolute;
-	left: 48.5vw;
+	left: 43.5vw;
 	margin-right: auto;
 	border-radius: 999px;
 	z-index: 20;
 	border-width: 6px;
-	@media (max-width: 768px) {
-		left: 4vw;
+	@media (max-width: 1024px) {
+		left: -1vw;
 	}
 `;
 

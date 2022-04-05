@@ -21,7 +21,7 @@ const TimelineItem = ({
 		<div className={`flex flex-row `} style={{marginTop: pos}}>
 			{!left && <div className="flex flex-col">
 				<TimelineBubble className="border-azure bg-white"/>
-				<h6 className="mx-auto everett text-lg sm:text-xl -mt-[3vh] sm:mt-0 lg:-mt-[1.75vw] xl:-mt-[1vw] text-center">{date}</h6>
+				<h6 className="mx-auto everett text-lg sm:text-xl -mt-[3vh] lg:-mt-[1.75vw] xl:-mt-[1vw] text-center">{date}</h6>
 				<span className="block w-[25vw] sm:w-[15vw] xl:w-[20vw] h-[0.25vh] bg-azure"></span>
 				{current && <h6 className="mx-auto everett text-xl text-center">Present</h6>}	
 			</div> }
