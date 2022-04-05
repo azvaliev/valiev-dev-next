@@ -46,11 +46,11 @@ const Project = ({
 				</div>
 			: null }
 			<div className="flex flex-wrap flex-col mx-auto sm:ml-4 w-[90vw] sm:max-w-[75vw] max-h-[95vh] sm:max-h-[75vh] shadow-lg p-8">
-				<h2 className="text-5xl textcenter everett-medium border-b-2 border-gray-800">
+				<h2 className="text-4xl text-center everett-medium border-b-2 border-gray-800">
 					{title}
 				</h2>
 				<p className="text-lg md:text-xl my-4">{description}</p>
-				<div className="flex flex-row mx-auto mt-4">
+				<div className="flex flex-row mx-auto mt-4 mb-8">
 					{github && 
 						<a href={github} target="_blank" rel="noopener" className="flex flex-row hover:filter hover:invert">
 								<button className="border-2 border-gray px-4 py-[0.4rem] rounded-md text-xl sm:text-2xl md:text-3xl lg:text-4xl text-black font-bold scale-100 transition-all hover:bg-[#948D7E] hover:border-0 hover:text-black hover:scale-110 ">
@@ -68,10 +68,8 @@ const Project = ({
 					</a>
 					}
 				</div>
-				<h3 className="text-3xl mx-auto mt-8 mb-0 sm:mt-auto sm:mb-4 everett underline">Technologies Utilized</h3>
-				<div className="flex flex-wrap mx-auto w-fit mt-2 mb-4 max-w-[50vw] sm:max-w-[20vw] lg:max-w-[15vw] ">
+				<h3 className="text-3xl mx-auto mt-8 mb-0 sm:mt-auto everett underline">Technologies Utilized</h3>
 					<TechIconDisplay icons={icons} />
-				</div>
 			</div>
 			{!left || isMobile ?
 				<div className={`relative mx-auto transition-all hover:scale-110 ${mobileImg ? "h-[50vh] sm:h-[65vh] w-[40vw]": "w-[80vw] h-[35vh] mt-[6vh] sm:mt-0 sm:h-[70vh] sm:w-[40vw]"}`}>

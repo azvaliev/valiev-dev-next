@@ -42,9 +42,7 @@ const TimelineItem = ({
 						</ViewWorkButton>
 					</a>
 				}
-				<div className="flex flex-wrap mx-auto w-fit mt-2 mb-4 max-w-[50vw] sm:max-w-[20vw] lg:max-w-[15vw]">
-					<TechIconDisplay icons={icons}/>
-				</div>
+					<TechIconDisplay icons={icons} isTimeline/>
 			</Main>
 			{left && <div className="flex flex-col">
 				<TimelineBubble className="border-azure bg-white"/>
