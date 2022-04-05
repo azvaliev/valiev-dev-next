@@ -22,7 +22,7 @@ const TimelineItem = ({
 			{!left && <div className="flex flex-col">
 				<TimelineBubble className="border-azure bg-white"/>
 				<h6 className="mx-auto everett text-lg sm:text-xl -mt-[3vh] lg:-mt-[1.75vw] xl:-mt-[1vw] text-center">{date}</h6>
-				<span className="block w-[25vw] sm:w-[15vw] xl:w-[20vw] h-[0.25vh] bg-azure"></span>
+				<span className="block w-[25vw] sm:w-[15vw] md:w-[30vw] lg:w-[15vw] xl:w-[20vw] h-[0.25vh] bg-azure"></span>
 				{current && <h6 className="mx-auto everett text-xl text-center">Present</h6>}	
 			</div> }
 			<Main className={`flex flex-col text-center mt-auto mb-0 p-2 bg-gray-50 rounded-md ${left && "ml-auto"}`}>

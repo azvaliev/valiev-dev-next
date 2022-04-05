@@ -9,12 +9,12 @@ interface TechIconProps {
 const TechIconDisplay = ({icons, isTimeline} : TechIconProps) => { 
 
 	const widths = isTimeline ? 
-		"max-w-[90%] sm:max-w-[40%] lg:max-w-[80%] xl:max-w-[70%]"
+		"max-w-[90%] sm:max-w-[55%] md:max-w-[50%] lg:max-w-[65%] xl:max-w-[75%]"
 	:
 		"max-w-[70%] sm:max-w-[75%] md:max-w-[65%] lg:max-w-[55%]"
 
 	const iconSizes = isTimeline ? 
-		"h-[8.75vw] w-[8.75vw] md:h-[3.5vw] md:w-[3.5vw] lg:h-[2.5vw] lg:w-[2.5vw]"
+		"h-[8.75vw] w-[8.75vw] sm:w-[6vw] sm:h-[6vw] md:h-[4.5vw] md:w-[4.5vw] lg:h-[2.5vw] lg:w-[2.5vw]"
 	:
 		"h-[8.75vw] w-[8.75vw] sm:w-[6vw] sm:h-[6vw] md:h-[4.5vw] md:w-[4.5vw] lg:h-[3.5vw] lg:w-[3.5vw] xl:h-[4vw] xl:w-[4vw]"
 
