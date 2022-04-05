@@ -41,7 +41,7 @@ const Project = ({
 	return (
 		<div className="flex flex-col lg:flex-row max-w-[100vw] pt-2 sm:py-4 overflow-hidden" key={key}>
 			{left || isMobile ?
-				<div className={`relative mx-auto transition-all hover:scale-110 sm:hover:translate-x-2 lg:h-[70vh] lg:w-[40vw] w-[80vw] h-[35vh] mt-[6vh]`}>
+				<div className={`relative m-auto transition-all hover:scale-110 sm:hover:translate-x-2 lg:h-[70vh] lg:w-[40vw] w-[80vw] h-[35vh] `}>
 					<Image src={mockup} alt={alt} layout="fill" objectFit="contain" priority={preload}/>
 				</div>
 			: null }
@@ -68,15 +68,14 @@ const Project = ({
 					</a>
 					}
 				</div>
-				<h3 className="text-3xl mx-auto mt-8 mb-0 sm:mt-auto everett underline">Technologies Utilized</h3>
+				<h3 className="text-3xl mx-auto lg:mt-4 mb-2 sm:mt-auto everett underline">Technologies Utilized</h3>
 					<TechIconDisplay icons={icons} />
 			</div>
 			{!left && !isMobile ?
-				<div className={`relative mx-auto transition-all hover:scale-110 w-[80vw] h-[35vh] mt-[6vh]`}>
+				<div className={`relative m-auto transition-all hover:scale-110 w-[80vw] h-[35vh]`}>
 					<Image src={mockup} alt={alt} layout="fill" objectFit="contain" priority={preload}/>
 				</div>
 			: null }
-
 		</div>
 	);
 }

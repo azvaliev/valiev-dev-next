@@ -20,7 +20,7 @@ export const ProjectValues: Array<projectData> = [
 		title: "Tri Cities Lawn & Irrigation",
 		description: `Tri Cities Lawn & Irrigation is a local service based business in Pasco, WA. The owner,
 		Rudy wanted to establish a solid online prescence to draw in new clients searching and showcase his work.
-		Since going online, Rudy haas recieved many new prospective clients through the site`,
+		Since going online, Rudy has recieved many new prospective clients through the site`,
 		mockup: "/portfolio/tclawnirrigation.webp",
 		alt: "Tri Cities Lawn & Irrigaton",
 		buttonText: "Check it out",
