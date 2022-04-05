@@ -55,7 +55,7 @@ const Home = () => {
       </IntroWrapper>
       <Timeline />
       <div className="mx-auto mt-2 pb-16 w-fit">
-      <Button text="View Recent Projects" link="/projects" className="text-5xl transition-all scale-100 hover:scale-110" />
+      <Button text="View Recent Projects" link="/projects" className="text-4xl sm:text-5xl transition-all scale-100 hover:scale-110" />
       </div>
       <div className="flex flex-col bg-gray-100 w-full">
         <h1 className="montserrat text-5xl pt-8 md:py-8 font-extralight mx-auto">
