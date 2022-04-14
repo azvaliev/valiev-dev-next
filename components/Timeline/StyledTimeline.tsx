@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Main = styled.div`
-	box-shadow: 0px 0px 8px 4px rgba(160,160,160,0.3);
+	box-shadow: 0px 0px 8px 4px rgba(160, 160, 160, 0.3);
 `;
 
 export const TimelineBubble = styled.span`
@@ -23,5 +23,5 @@ export const ViewWorkButton = styled.button`
 	margin: 0 auto;
 	padding: 0.5rem 1rem;
 	border-width: 2px;
-	border-radius: 0.375rem
+	border-radius: 0.375rem;
 `;

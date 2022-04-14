@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import pdfobject from "../components/pdfobject";
 
 const config = {
-	fallbackLink: 	`<div className="m-auto">
+	fallbackLink: `<div className="m-auto">
 						<h1 className="text-5xl text-center">
 							Your browser does not support PDF
 						</h1>
@@ -15,10 +15,9 @@ const config = {
 						</h2>
 					</div>`,
 	pdfOpenParams: {
-		zoom: 100
-	}
-
-}
+		zoom: 100,
+	},
+};
 
 const Reccomendation = () => {
 	useEffect(() => {
@@ -26,10 +25,13 @@ const Reccomendation = () => {
 	}, []);
 	return (
 		<>
-			<div className="h-[10vh] bg-white"/>
-			<div className="sm:h-[90vh] px-[25%] mx-auto sm:bg-coal" id="letterofrec"></div>
+			<div className="h-[10vh] bg-white" />
+			<div
+				className="sm:h-[90vh] px-[25%] mx-auto sm:bg-coal"
+				id="letterofrec"
+			></div>
 		</>
-	)
-}
+	);
+};
 
 export default Reccomendation;
