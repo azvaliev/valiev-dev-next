@@ -34,7 +34,7 @@ export const ProjectValues: Array<projectData> = [
 		alt: "Tri Cities Lawn & Irrigaton",
 		buttonText: "Check it out",
 		link: "https://tclawnirrigation.com",
-		icons: [icons.react, icons.css, icons.js, icons.aws],
+		icons: [icons.next, icons.react, icons.ts, icons.html, icons.css, icons.tailwind, icons.aws],
 		left: true,
 	},
 	{
